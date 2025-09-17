@@ -5,12 +5,10 @@ FROM composer:2 AS vendor
 
 WORKDIR /app
 
-# Copy composer files and install dependencies
+# Copy composer files and install dependencies (skip artisan hooks)
 COPY composer.json composer.lock ./
-RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progress --no-scripts
 
-# Copy the rest of the Laravel app
-COPY . .
 
 # ---------------------
 # Stage 2: Node (Vite build)
