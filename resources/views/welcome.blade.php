@@ -251,7 +251,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-medium text-gray-900">Email</h3>
-                                    <p class="text-sm text-gray-600">feihlsuazo.devgmail.com</p>
+                                    <p class="text-sm text-gray-600">feihlsuazo.dev@gmail.com</p>
                                 </div>
                             </a>
                             
