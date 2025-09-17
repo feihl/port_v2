@@ -245,7 +245,7 @@
                     <section class="section-card bg-white rounded-xl border border-gray-200 p-6">
                         <h2 class="text-xl font-semibold text-gray-900 mb-6">Quick Actions</h2>
                         <div class="space-y-3">
-                            <a href="mailto:bryllim@gmail.com" class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                            <a href="mailto:feihlsuazo.dev@gmail.com" class="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
                                 <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
                                     <i class="fas fa-envelope text-red-600"></i>
                                 </div>
@@ -371,7 +371,7 @@
                             <a href="#" class="text-gray-400 hover:text-gray-600 transition-colors">
                                 <i class="fab fa-instagram text-xl"></i>
                             </a>
-                            <a href="mailto:bryllim@gmail.com" class="text-gray-400 hover:text-gray-600 transition-colors">
+                            <a href="mailto:feihlsuazo.dev@gmail.com" class="text-gray-400 hover:text-gray-600 transition-colors">
                                 <i class="fas fa-envelope text-xl"></i>
                             </a>
                         </div>
@@ -395,7 +395,7 @@
                         <ul class="space-y-2">
                             <li class="flex items-center gap-2">
                                 <i class="fas fa-envelope text-gray-400 text-xs"></i>
-                                <a href="mailto:bryllim@gmail.com" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">feihlsuazo.dev@gmail.com</a>
+                                <a href="mailto:feihlsuazo.dev@gmail.com" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">feihlsuazo.dev@gmail.com</a>
                             </li>
                             <li class="flex items-center gap-2">
                                 <i class="fas fa-map-marker-alt text-gray-400 text-xs"></i>
