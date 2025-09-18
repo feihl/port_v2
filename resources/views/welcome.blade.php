@@ -145,7 +145,9 @@
                     <!-- About Section -->
                     <section class="section-card bg-white rounded-xl border border-gray-200 p-6">
                         <h2 class="text-xl font-semibold text-gray-900 mb-4">About</h2>
-                        <p class="text-gray-700 leading-relaxed">{!! $portfolio['about'] !!}</p>
+                        <p class="text-gray-700 leading-relaxed text-justify">
+                            {!! $portfolio['about'] !!}
+                        </p>
                     </section>
 
                     <!-- Recent Certifications Section -->
