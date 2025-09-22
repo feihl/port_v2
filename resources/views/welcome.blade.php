@@ -162,15 +162,19 @@
                         
                         <div class="space-y-4">
                             @foreach($portfolio['certifications'] as $cert)
-                            <div class="flex items-center gap-4 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
-                                <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-certificate text-yellow-300"></i>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="font-medium text-gray-900">{{ $cert['name'] }}</h3>
-                                    <p class="text-sm text-gray-600">{{ $cert['issuer'] }} • {{ $cert['date'] }}</p>
-                                </div>
-                            </div>
+                                <a href="{{ $cert['url'] }}" target="_blank" 
+                                class="flex items-center gap-4 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-certificate text-yellow-300"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="font-medium text-gray-900">{{ $cert['name'] }}</h3>
+                                        <p class="text-sm text-gray-600">{{ $cert['issuer'] }} • {{ $cert['date'] }}</p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-external-link-alt text-gray-400"></i>
+                                    </div>
+                                </a>
                             @endforeach
                         </div>
                     </section>
