@@ -138,7 +138,7 @@
         </section>
 
         <!-- Main Content -->
-        <div class="px-8 pb-12">
+        <div class="px-4 pb-12">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <!-- Left Column -->
                 <div class="lg:col-span-2 space-y-8">
@@ -359,7 +359,7 @@
         </div>
 
         <!-- Footer Section -->
-        <footer class="border-t border-gray-200 bg-gray-50 px-8 py-8">
+        <footer class="border-t border-gray-200 bg-gray-50 px-4 py-8">
             <div class="max-w-6xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <!-- About Column -->
