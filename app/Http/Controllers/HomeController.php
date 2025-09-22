@@ -114,35 +114,35 @@ class HomeController
                     'issuer' => 'Certificate of Recognition',
                     'date' => '2025',
                     'credential_id' => 'RESEARCH-2025',
-                    'url' => '#'
+                    'url' => 'https://drive.google.com/file/d/1Pz3mzMs5c4rTbU3LdpTFwttJrvKq6fT7/view?usp=sharing'
                 ],
                 [
                     'name' => 'On-the-Job-Training Completion',
                     'issuer' => 'Certificate of Completion',
                     'date' => '2025',
                     'credential_id' => 'OJT-2025',
-                    'url' => '#'
+                    'url' => 'https://drive.google.com/file/d/16QHH1qx2Eqy5qsfyx9s_WqUVMiZoaWkD/view?usp=sharing'
                 ],
                 [
                     'name' => 'ACLC Coding Bootcamp',
                     'issuer' => 'Certificate of Commendation',
                     'date' => '2025',
                     'credential_id' => 'BOOTCAMP-2025',
-                    'url' => '#'
+                    'url' => 'https://drive.google.com/file/d/1v8jduZZ0h8_fbUMrxM79aeLH9K-_3-fc/view?usp=sharing'
                 ],
                 [
                     'name' => 'Tabulation System Project',
                     'issuer' => 'Certificate of Recognition - Front-End Developer',
                     'date' => '2025',
                     'credential_id' => 'TAB-SYS-2025',
-                    'url' => '#'
+                    'url' => 'https://drive.google.com/file/d/11Lg3oYrmy2gNfY0zNwGPLL9CCeMCZH1Y/view?usp=sharing'
                 ],
                 [
                     'name' => 'Service Awardee',
                     'issuer' => 'Certificate of Recognition',
                     'date' => '2025',
                     'credential_id' => 'SERVICE-2025',
-                    'url' => '#'
+                    'url' => 'https://drive.google.com/file/d/1xFC6f5EKYE1qZ9IueL1py9rL-NUtg3yt/view?usp=sharing'
                 ],
                 // [
                 //     'name' => 'ACLC Summer Coding Bootcamp',
