@@ -111,23 +111,43 @@
                             <!-- Achievement Badge (Desktop) -->
                             <div class="md:block">
                                 <div class="relative" style="z-index:999999">
-                                    <div class="flex items-center hackathon-badge rounded-lg transition-all duration-300 transform hover:scale-105 w-full md:w-auto md:scale-90" style="background:linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)">
-                                        <a href="#" target="_blank" rel="noopener noreferrer" 
-                                        class="inline-flex h-7 md:h-8 items-center rounded-l-lg px-2.5 md:px-4 text-[8px] md:text-xs font-medium text-white transition-all duration-300 gap-1 md:gap-1.5 whitespace-nowrap relative overflow-hidden group flex-1 justify-center md:justify-start min-h-0" 
+                                    <div
+                                        class="flex items-center hackathon-badge rounded-lg transition-all duration-300 transform hover:scale-105 w-full md:w-auto md:scale-90"
                                         style="background:linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)">
+                            
+                                        <a href="#" target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex h-7 md:h-8 items-center rounded-l-lg px-2.5 md:px-4 text-[8px] md:text-xs font-medium text-white transition-all duration-300 gap-1 md:gap-1.5 whitespace-nowrap relative overflow-hidden group flex-1 justify-center md:justify-start min-h-0"
+                                            style="background:linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)">
                                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 512 512">
-                                                <path d="M476.624,55.698C468.257,22.9,440.129,0,408.219,0c-0.005,0-0.012,0-0.017,0h-40.814H144.609H103.8 c-0.006,0-0.011,0-0.017,0c-31.91,0-60.039,22.902-68.406,55.696c-4.265,16.718-5.249,43.19,14.293,74.356 c14.927,23.808,39.204,45.759,72.2,65.384c4.091,62.185,50.632,112.966,110.857,123.567v50.975h-72.204 c-12.853,0-23.273,10.418-23.273,23.273v95.476c0,12.851,10.42,23.273,23.273,23.273h190.954 c12.853,0,23.273-10.422,23.273-23.273v-95.476c0-12.854-10.42-23.273-23.273-23.273h-72.204v-50.933 c60.38-10.512,107.061-61.412,111.096-123.75c32.875-19.588,57.069-41.491,71.962-65.243 C481.873,98.887,480.889,72.417,476.624,55.698z M80.476,67.204c3.463-13.565,14.344-20.658,23.315-20.658h0.005h17.574 l0.13,92.639C85.513,111.52,75.944,84.973,80.476,67.204z M390.662,139.062V46.545h17.548h0.005c8.965,0,19.85,7.095,23.312,20.66 C436.05,84.947,426.516,111.441,390.662,139.062z"></path>
+                                                <path
+                                                    d="M476.624,55.698C468.257,22.9,440.129,0,408.219,0c-0.005,0-0.012,0-0.017,0h-40.814H144.609H103.8c-31.91,0-60.039,22.902-68.406,55.696c-4.265,16.718-5.249,43.19,14.293,74.356c14.927,23.808,39.204,45.759,72.2,65.384c4.091,62.185,50.632,112.966,110.857,123.567v50.975h-72.204c-12.853,0-23.273,10.418-23.273,23.273v95.476c0,12.851,10.42,23.273,23.273,23.273h190.954c12.853,0,23.273-10.422,23.273-23.273v-95.476c0-12.854-10.42-23.273-23.273-23.273h-72.204v-50.933c60.38-10.512,107.061-61.412,111.096-123.75c32.875-19.588,57.069-41.491,71.962-65.243C481.873,98.887,480.889,72.417,476.624,55.698z">
+                                                </path>
                                             </svg>
                                             <span class="relative z-10">Excellence Awards</span>
                                         </a>
-                                        <button class="inline-flex h-7 md:h-8 items-center rounded-r-lg px-1.5 md:px-2 text-white transition-all duration-300 border-l border-white/20 relative overflow-hidden group min-h-0" 
-                                                style="background:linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%)">
+                            
+                                        <button id="dropdownToggle"
+                                            class="inline-flex h-7 md:h-8 items-center rounded-r-lg px-1.5 md:px-2 text-white transition-all duration-300 border-l border-white/20 relative overflow-hidden group min-h-0"
+                                            style="background:linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%)">
                                             <div class="transform transition-transform duration-200 relative z-10">
                                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                        d="M19 9l-7 7-7-7"></path>
                                                 </svg>
                                             </div>
                                         </button>
+                                    </div>
+                            
+                                    <!-- Dropdown menu (hidden by default) -->
+                                    <div id="dropdownMenu"
+                                        class="hidden absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+                                        <ul class="py-2 text-sm text-gray-700">
+                                            @foreach ($portfolio['exellence'] as $award)
+                                                <li>
+                                                    <span class="block px-4 py-2 hover:bg-gray-100">{{ $award }}</span>
+                                                </li>
+                                            @endforeach
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -433,6 +453,22 @@
                 </div>
             </div>
         </footer>
-    </div>    
+    </div> 
+    <script>
+    const toggleBtn = document.getElementById("dropdownToggle");
+    const dropdown = document.getElementById("dropdownMenu");
+
+    toggleBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle("hidden");
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", (e) => {
+        if (!dropdown.contains(e.target) && !toggleBtn.contains(e.target)) {
+            dropdown.classList.add("hidden");
+        }
+    });
+</script>
 </body>
 </html>
