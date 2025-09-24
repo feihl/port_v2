@@ -181,6 +181,11 @@ class HomeController
                 'twitter' => 'https://twitter.com/yourusername',
                 'website' => 'https://yourwebsite.com'
             ],
+            'exellence' => [
+                'award_1' => 'Best in Research Paper - Capstone | 2025',
+                'award_2' => 'Special Community Service Awardee | 2025',
+                'award_3' => 'Service Awardee - ADSS Officer | 2025'
+            ],
         ];
         
         return view('welcome', compact('portfolio'));
