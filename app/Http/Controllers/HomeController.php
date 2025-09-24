@@ -138,7 +138,7 @@ class HomeController
                     'url' => 'https://drive.google.com/file/d/11Lg3oYrmy2gNfY0zNwGPLL9CCeMCZH1Y/view?usp=sharing'
                 ],
                 [
-                    'name' => 'Service Awardee',
+                    'name' => 'Special Community Service Awardee',
                     'issuer' => 'Certificate of Recognition',
                     'date' => '2025',
                     'credential_id' => 'SERVICE-2025',
