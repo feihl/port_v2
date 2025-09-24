@@ -46,18 +46,23 @@ class CertificateController extends Controller
                     'url' => 'https://drive.google.com/file/d/11Lg3oYrmy2gNfY0zNwGPLL9CCeMCZH1Y/view?usp=sharing'
                 ],
                 [
-                    'name' => 'Special Service Awardee',
+                    'name' => 'Special Community Service Awardee',
+                    'issuer' => 'Certificate of Recognition',
+                    'date' => '2025',
+                    'url' => 'https://drive.google.com/file/d/1xFC6f5EKYE1qZ9IueL1py9rL-NUtg3yt/view?usp=sharing'
+                ],
+                [
+                    'name' => 'Special Community Service Awardee',
                     'issuer' => 'Certificate of Recognition - (First Aider)',
                     'date' => '2025',
                     'url' => 'https://drive.google.com/file/d/1kV1WivQ3JAAkF-MP6lKXnL-BIhW2rK-r/view?usp=sharing'
                 ],
                 [
-                    'name' => 'Special Service Awardee',
+                    'name' => 'Service Awardee - ACLC Designer and Skilled Students Officer',
                     'issuer' => 'Certificate of Recognition',
                     'date' => '2025',
-                    'url' => 'https://drive.google.com/file/d/1xFC6f5EKYE1qZ9IueL1py9rL-NUtg3yt/view?usp=sharing'
+                    'url' => 'https://drive.google.com/file/d/16XYX94ok2fCsp0KmV5tUSvdfQwpaZK5v/view?usp=sharing'
                 ],
-
                 [
                     'name' => 'ACLC Summer Coding Bootcamp',
                     'issuer' => 'Certificate of Completion',
