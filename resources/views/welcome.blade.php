@@ -381,80 +381,11 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer Section -->
-        <footer class="border-t border-gray-200 bg-gray-50 px-4 py-8">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <!-- About Column -->
-                    <div class="md:col-span-2">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ $portfolio['name'] }}</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                            Passionate software developer focused on creating innovative solutions and sharing knowledge with the developer community.
-                        </p>
-                        <div class="flex gap-4">
-                            <a href="#" class="text-gray-400 hover:text-gray-600 transition-colors">
-                                <i class="fab fa-linkedin text-xl"></i>
-                            </a>
-                            <a href="https://github.com/feihl" class="text-gray-400 hover:text-gray-600 transition-colors">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-gray-600 transition-colors">
-                                <i class="fab fa-instagram text-xl"></i>
-                            </a>
-                            <a href="mailto:feihlsuazo.dev@gmail.com" class="text-gray-400 hover:text-gray-600 transition-colors">
-                                <i class="fas fa-envelope text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Quick Links Column -->
-                    <!-- <div>
-                        <h3 class="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Quick Links</h3>
-                        <ul class="space-y-2">
-                            <li><a href="#about" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">About</a></li>
-                            <li><a href="#projects" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Projects</a></li>
-                            <li><a href="#experience" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Experience</a></li>
-                            <li><a href="#certifications" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Certifications</a></li>
-                            <li><a href="#contact" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Contact</a></li>
-                        </ul>
-                    </div> -->
-                    
-                    <!-- Contact Column -->
-                    <div>
-                        <h3 class="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Get in Touch</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-center gap-2">
-                                <i class="fas fa-envelope text-gray-400 text-xs"></i>
-                                <a href="mailto:feihlsuazo.dev@gmail.com" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">feihlsuazo.dev@gmail.com</a>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fas fa-map-marker-alt text-gray-400 text-xs"></i>
-                                <span class="text-gray-600 text-sm">{{ $portfolio['location'] }}</span>
-                            </li>
-                            <!-- <li class="flex items-center gap-2">
-                                <i class="fas fa-calendar text-gray-400 text-xs"></i>
-                                <a href="#" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Schedule a Call</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Footer Bottom -->
-                <div class="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-500 text-sm">
-                        © {{ date('Y') }} {{ $portfolio['name'] }}. All rights reserved.
-                    </p>
-                    <div class="flex items-center gap-6 mt-4 md:mt-0">
-                        <a href="#" class="text-gray-500 hover:text-gray-700 text-sm transition-colors">Privacy Policy</a>
-                        <a href="#" class="text-gray-500 hover:text-gray-700 text-sm transition-colors">Terms of Service</a>
-                        <div class="flex items-center gap-1 text-gray-500 text-sm">
-                            <span>Made with</span>
-                            <i class="fas fa-heart text-red-500 text-xs"></i>
-                            <span>using Laravel & Tailwind CSS</span>
-                        </div>
-                    </div>
-                </div>
+         <footer class="border-t border-gray-200 bg-gray-50 px-8 py-8">
+            <div class="flex justify-center items-center">
+                <p class="text-gray-500 text-sm text-center">
+                    © {{ date('Y') }} {{ $portfolio['name'] }}. All rights reserved.
+                </p>
             </div>
         </footer>
     </div> 
