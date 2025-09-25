@@ -109,13 +109,15 @@
                                 </a>
 
                             <!-- Achievement Badge (Desktop) -->
-                            <div class="md:block">
-                                <div class="relative" style="z-index:999999">
+                                                        <div class="relative" style="z-index:999999">
+                                    <!-- Button Section -->
                                     <div
-                                        class="flex items-center hackathon-badge rounded-lg transition-all duration-300 transform hover:scale-105 w-full md:w-auto md:scale-90"
+                                        id="dropdownToggle"
+                                        class="flex items-center hackathon-badge rounded-lg cursor-pointer transition-all duration-300 transform hover:scale-105 w-full md:w-auto md:scale-90"
                                         style="background:linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)">
-                            
-                                        <a href="#" target="_blank" rel="noopener noreferrer"
+
+                                        <!-- Left Label -->
+                                        <div
                                             class="inline-flex h-7 md:h-8 items-center rounded-l-lg px-2.5 md:px-4 text-[8px] md:text-xs font-medium text-white transition-all duration-300 gap-1 md:gap-1.5 whitespace-nowrap relative overflow-hidden group flex-1 justify-center md:justify-start min-h-0"
                                             style="background:linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%)">
                                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 512 512">
@@ -124,9 +126,10 @@
                                                 </path>
                                             </svg>
                                             <span class="relative z-10">Excellence Awards</span>
-                                        </a>
-                            
-                                        <button id="dropdownToggle"
+                                        </div>
+
+                                        <!-- Right Arrow -->
+                                        <div
                                             class="inline-flex h-7 md:h-8 items-center rounded-r-lg px-1.5 md:px-2 text-white transition-all duration-300 border-l border-white/20 relative overflow-hidden group min-h-0"
                                             style="background:linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%)">
                                             <div class="transform transition-transform duration-200 relative z-10">
@@ -135,19 +138,20 @@
                                                         d="M19 9l-7 7-7-7"></path>
                                                 </svg>
                                             </div>
-                                        </button>
+                                        </div>
                                     </div>
-                            
-                                    <!-- Dropdown menu (hidden by default) -->
+
+                                    <!-- Dropdown Menu -->
                                     <div id="dropdownMenu"
-                                        class="hidden absolute left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
-                                        <ul class="py-2 text-sm text-gray-700">
+                                        class="hidden absolute left-0 mt-2 w-auto bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden p-2">
+                                        <div class="flex flex-wrap gap-3">
                                             @foreach ($portfolio['exellence'] as $award)
-                                                <li>
-                                                    <span class="block px-4 py-2 hover:bg-gray-100">{{ $award }}</span>
-                                                </li>
+                                                <span
+                                                    class="px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg text-gray-700 whitespace-nowrap">
+                                                    {{ $award }}
+                                                </span>
                                             @endforeach
-                                        </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
